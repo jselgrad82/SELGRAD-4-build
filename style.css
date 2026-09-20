@@ -1,0 +1,111 @@
+/* CSS written by John Selgrad */
+
+/*GLOBAL STYLES (MOBILE FIRST) */
+body {
+    display:grid;
+    grid-template-columns:1fr;
+    background-color: dodgerblue;
+    font-family:Century Gothic, sans-serif;
+    
+}
+@media screen and (min-width:600px){
+    body {
+    grid-template-columns: 1fr;
+    background-color:mediumturquoise;   
+}
+}
+@media screen and (min-width:800px){
+    body {
+    grid-template-columns: 1fr;    
+    background-color: lightblue;  
+}
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align:center;
+
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  background-color: oldlace;
+}
+
+.intro {
+  background-color: oldlace;
+  padding: 1rem;
+  text-align: center;
+  font-weight:500px;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card-row section {
+  flex: 1;
+  background-color:oldlace;
+  padding: 1rem;
+}
+
+.quick-facts {
+    background-color: oldlace;
+    padding: 1rem;
+}
+
+.quick-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.quick-guide {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  background-color:oldlace;
+  color:dimgray;
+  font-size: 0.8rem;
+  font-style: italic;
+  padding: 1rem;
+  text-align: center;
+}
