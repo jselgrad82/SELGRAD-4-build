@@ -17,7 +17,16 @@ body {
 @media screen and (min-width:800px){
     body {
     grid-template-columns: 1fr;    
-    background-color: lightblue;  
+    background-color: lightblue; 
+    
+    .quick-guide {
+        display:flex;
+        justify-content:center; 
+        flex-wrap:nowrap;
+        width: auto;
+        padding-left: 2rem;
+        gap: 2rem;
+    }
 }
 }
 
@@ -58,7 +67,7 @@ nav a:hover {
   background-color: oldlace;
   padding: 1rem;
   text-align: center;
-  font-weight:500px;
+  font-weight: normal;
 }
 
 .card-row {
@@ -77,8 +86,12 @@ nav a:hover {
 }
 
 .quick-facts {
-    background-color: oldlace;
-    padding: 1rem;
+  background-color: oldlace;
+  padding: 1rem;
+  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
 }
 
 .quick-title {
@@ -87,10 +100,11 @@ nav a:hover {
 }
 
 .quick-guide {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
+    display:block; 
+    width: fit-content;
+    padding-left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main {
